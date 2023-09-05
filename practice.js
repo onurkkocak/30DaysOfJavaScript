@@ -186,4 +186,49 @@ console.log('Toplam', total)
    const hello2 = name => `hello ${name}`
    console.log(hello2('kamil'))
 
-   
+   let ad = 'onur'
+    soyad = 'kocak'
+    function letsLearnScope(){
+       console.log(ad, soyad)
+       if(true) {
+        let ad = 'furkan'
+        let soyad = 'kuzu'
+            console.log(ad, soyad)
+       }
+       console.log(ad, soyad)
+    }
+    letsLearnScope()
+    console.log(ad, soyad)
+
+    function sayHello3(){
+        console.log('hello')
+    }
+    setTimeout(sayHello3, 2000) // sonradan yazdırır setInterval ise her belirtilen saniye sonrasında yenisini yazdırır
+    
+
+    const map = new Map()
+        map.set('name', 'onur')
+        console.log(map)
+
+    const stack = [
+        ['html', 'css', 'javascript'],
+        ['php', 'mysql','node.js']
+    ]
+    const [[firstItem], backend] = stack 
+
+console.log(firstItem)
+
+const namee = ['onur', 'gülizar', 'furkan', 'berke', 'berat']
+const [myName, myWifeName, myFriendName, ...otherNames] = namee
+
+console.log(myName)
+console.log(myWifeName)
+console.log(myFriendName)
+console.log(otherNames)
+
+
+function multiply(sayılar){
+    return sayılar [0] * sayılar[1]
+}
+const sayılar = [10, 10 ]
+console.log(multiply(sayılar))
