@@ -1,4 +1,4 @@
-let numOne = 3
+/*let numOne = 3
 let numTwo = 3
 console.log(numOne == numTwo)
 
@@ -93,7 +93,7 @@ if(result == '7'){
 }
 else {
     console.log('yanlış cevap hacı')
-}*/
+}
 
 const number =  [0, 3, 35, 68, 94, 41, 'onur', true]
 console.log('onur'.split(''))
@@ -142,7 +142,7 @@ console.log('Toplam', total)
 /*let sayı = 10,
     sayı2 = 4
     let toplam = multiply(sayı, sayı2)
-*/
+
     function sumArrayValues(array){
         let esit = 0
        for (let i = 0; i < array.length; i++){
@@ -232,3 +232,36 @@ function multiply(sayılar){
 }
 const sayılar = [10, 10 ]
 console.log(multiply(sayılar))
+
+/*let str = prompt('yorumunu yaz! Ama yazarken dikkatli ol')
+
+let pattern = /24/
+
+if (pattern.test(str)){
+    alert('sen 24 yaşında değilsin!')
+}*/
+
+/*let strng = 'I love javascript'
+console.log(strng.match(/love/))
+
+const txt = 'Python is the most beautiful language that a human begin has ever created.\
+I recommend python for a first programming language'
+
+let matchReplaced = txt.replace(/Python|python/, 'JavaScript')
+console.log(matchReplaced)
+
+let firstName = '1Onur'
+
+console.log(
+    /^[a-z]$/.test(firstName)
+    )
+
+    let namess = ['onur', 'furkan', 'emre']
+    console.table(namess)
+
+    console.time('calculate 1m array')
+    
+    new Array(10e5).fill().map((value, index) => index)
+    console.timeEnd('calculate 1m array')
+
+    */
