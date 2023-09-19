@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .active{
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-   <ul>
-        <h1 style="background-color: yellow; color: red;" id="test" class="adana"> başlık 1</h1>
-        <h1 class="title-1"> başlık 2 </h1>
-        <h1 id="title"> başlık 3</h1>
-        <h1 class="title-2"> başlık 4</h1>
-    </ul>
-    <button id="btn">
-        button
-    </button>
+
+    <a href="/about.html">Hakkimda</a>
+    <a href="https://prototurk.com">prototurk.com</a>
+
+    <h1>bu bir başlık</h1>
+
+    <form action="about.html" id="form1">
+        <input placeholder="kullanıcı adı" type="text" name="username"><br>
+        <input placeholder="şifre" type="password" name="password"><br>
+        <input placeholder="E-posta" type="email" name="email" ><br>
+        <textarea placeholder="Hakkında" name="about" cols="30" rows="10"></textarea> <br>
+        <button type="submit">gönder</button>
+    </form>
+    <div class="tab">
+        <nav>
+            <button>tab1</button>
+            <button>tab2</button>
+            <button>tab3</button>
+        </nav>
+        <div class="contents">
+            <section>
+                content1
+            </section>
+            <section>
+                content2
+            </section>
+            <section>
+                content3
+            </section>
+        </div>
+    </div>
     <script src="./practice.js"></script>
     <script src="./webStorage.js"></script>
     <script src="./promise-fetch-async.js"></script>

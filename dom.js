@@ -21,7 +21,7 @@ title.className = 'adana'
     document.body.appendChild(h1)
 */
 
-const button = document.getElementById('btn')
+/*const button = document.getElementById('btn')
 button.addEventListener('click', function(e){
     console.log('butona basıldı')
 })
@@ -29,4 +29,66 @@ button.addEventListener('click', function(e){
 /*const  h1 = document.querySelector('h1')
 console.log(h1.attributes.style)*/
 
+/*const aTags = document.querySelectorAll('a')
 
+aTags.forEach(a => {
+    a.addEventListener('click', e => {
+        const href = e.target.getAttribute('href')
+        if (href.includes ('http') && ! confirm('dış bağlantıya gidiyorsun dikkat ettin mi?')){
+            
+            e.preventDefault()
+
+
+        }
+    })
+})*/
+
+/*const h1 = document.querySelector('h1')
+
+let propName = 'color'
+h1.style.setProperty(propName, 'red')
+
+
+const input = document.querySelector('input')
+input.addEventListener('select', e => {
+    console.log(
+        e.target.value.substring(
+        e.target.selectionStart,
+        e.target.selectionEnd
+    ))
+})
+
+const textarea = document.querySelector('textarea')
+const actionButtons = document.querySelectorAll('.action-btn')
+
+actionButtons.forEach(button => {
+    button.addEventListener('click', e =>{
+        console.log(
+            textarea.selectionStart,
+            textarea.selectionEnd
+        )
+        console.log(e.target.dataset.type)
+    })
+})*/
+const form1 = document.getElementById('form1')
+console.log(form1.elements)
+
+const tab = document.querySelector('.tab')
+const buttons = tab.querySelectorAll('nav button')
+const contents = tab.querySelectorAll('.contents section')
+
+buttons[0].classList.add('active')
+
+console.log(
+    [...contents].slice(1).forEach( content => content.style.display = 'none')
+     )
+     buttons.forEach((button, index) => button.addEventListener('click', e => {
+        buttons.forEach(btn => btn.classList.remove('active'))
+        e.target.classList.add('active')
+        contents.forEach(content => content.display = 'none')
+        contents[index].style.display = 'block'
+     }))
+
+
+    
+     
